@@ -57,7 +57,7 @@ function draw() {
 
 
   if(frameCount%60 === 0){
-    particles.push(new Particles(random(20, 460), 40, 10))
+    particles.push(new Particles(random(50, 430), 40, 10))
   }
   for (var p = 0; p < particles.length; p++){
     particles[p].display()
