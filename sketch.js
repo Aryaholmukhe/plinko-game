@@ -43,6 +43,8 @@ function setup() {
 function draw() {
   background(0);
 
+ Engine.update(engine)
+
   border1.display()
   border2.display()
   border3.display()
@@ -55,7 +57,7 @@ function draw() {
 
 
   if(frameCount%60 === 0){
-    particles.push(new Particles(random(width/2-20, width/2+20), 40, 10))
+    particles.push(new Particles(random(20, 460), 40, 10))
   }
   for (var p = 0; p < particles.length; p++){
     particles[p].display()
